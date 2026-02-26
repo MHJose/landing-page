@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Fraunces', 'serif';
+    src: url('../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope', 'serif';
+    src: url('../assets/fonts/manrope/Manrope-VariableFont_wght.ttf');
+}
+
+section{
+    display: flex;
+    text-align: center;
+}
+
+.container_1{
+    position: relative;
+    background-color: transparent;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  /* background-color: #24053E; */
+  z-index: 1;
+
+    /* Crea una curva hacia adentro */
+    /* clip-path: ellipse(100% 100% at 50% 0%); */
+
+}
+
+.container_1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #24053E;
+  /* Aplicamos la curva AQUÍ, no al padre */
+  clip-path: ellipse(100% 100% at 50% 0%);
+  z-index: -1; /* Lo enviamos al fondo */
+}
+
+.container_1 h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.container_1 h3{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    border-bottom: 3px solid #44ffa1;
+}
+
+.container_title_1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.container_1 .img_hero{
+    width: 360px;
+    transform: translateY(30%);
+    position: relative;
+    z-index: 10;
+}
+
+.section_2 {
+    margin: 30px 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container_p_circle{
+    /* justify-content: center; */
+    /* background-color: #44ffa1; */
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 10px 0;
+    height: 6%;
+}
+
+.p_circle{
+    border: 1px solid #24053E;
+    border-radius: 50%;
+    width: 12%;
+    height: 100%;
+    align-content: center;
+    font-family: 'Manrope', 'sans-serif';
+    font-weight: 900;
+    /* font-size: 20px; */
+    font-size: 20px;
+
+
+}
+
+.p_circle {
+}
+
+p{
+    color: #24053E;
+    font-family: 'Manrope', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    /* font-weight: 500; */
+}
+
+
+.card_button{
+
+    width: 100%;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+
+}
+
+button{
+    background-color: #44ffa1;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    /* height: 100%; */
+    width: 191px;
+    font-weight: 600;
+    font-style: bold;
+    border: none;
+    justify-content: center;
+}
+
+.container_card{
+    margin: 1rem;
+    height: 100%;
+}
+
+
+.image_founder{
+    position: relative;
+    width: 280px;
+    transform: translateY(15%);
+    z-index: -1;
+}
+
+.card{
+    background-color: #24053E;
+    z-index: 5;
+    padding: 30px;
+}
+
+.card_text{
+    /* padding: 30px; */
+}
+
+.card_button{
+    margin: 10px 0;
+}
+
+.card_title{
+    padding: 30px 35px;
+    
+}
+
+.card_title h1{
+    font-weight: 400;
+}
+
+.card, .p_card{
+    color: white;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 200;
+}
+
+.container_1{
+    height: 55%;
+}
+
+.section_2 h2{
+   font-family: 'Fraunces, "serif';
+   font-weight: 600;
+   color: #24053E;
+}
+
+.section_2{
+    margin: 20px;
+    height: 70%;
+}
+
+.section_3{
+    margin: 5px;
+    /* height: 100%; */
+}
+
+footer{
+    margin: 50px;
+}
+
+footer .container_workit{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+footer .container_network{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
